@@ -1,0 +1,29 @@
+{
+  "name": "exprtk",
+  "description": "Wrapper for exprtk",
+  "version": "0.0.1",
+  "author": {
+    "name": "Jim Alateras",
+    "email": "jim@sutoiku.com"
+  },
+  "main": "index.js",
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "dependencies": {
+    "bindings": "*"
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sutoiku/formula.git"
+  },
+  "licenses": [
+    {
+      "type": "BSD"
+    }
+  ],
+  "gypfile": true
+}
