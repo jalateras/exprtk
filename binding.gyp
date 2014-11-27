@@ -14,16 +14,18 @@
         "lib/exprtk.cpp"
       ],
       'cflags!': [
-        '-fno-exceptions'
+        '-fno-exceptions',
+	      '-fno-rtti'
        ],
       'cflags_cc!': [
-        '-fno-exceptions'
+        '-fno-exceptions',
+	      '-fno-rtti'
       ],
       "cflags": [
         '-Wall',
         '-O2',
         '-O3',
-        '-std=c++1'
+        '-std=c++11'
       ]
     }
   ]
