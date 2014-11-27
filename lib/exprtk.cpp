@@ -21,10 +21,7 @@ Handle<Value> Evaluate(const Arguments& args) {
   expression<double> expression;
   parser<double> parser;
   parser.compile(expression_string, expression);
-  double result;
-  for (size_t i = 0; i < 1000; i++) {
-    result = expression.value();
-  }
+  double result = expression.value();
 
   return scope.Close(Number::New(result));
 }
@@ -34,4 +31,4 @@ void init(Handle<Object> exports) {
       FunctionTemplate::New(Evaluate)->GetFunction());
 }
 
-NODE_MODULE(formula, init)
+NODE_MODULE(exprtk, init)

@@ -8,10 +8,14 @@
   },
   "main": "index.js",
   "scripts": {
-    "install": "node-gyp rebuild"
+    "install": "node-gyp rebuild",
+    "test": "mocha --reporter spec test"
   },
   "dependencies": {
     "bindings": "*"
+  },
+  "devDependencies": {
+    "chai": "*"
   },
   "engines": {
     "node": ">= 0.8.0"
